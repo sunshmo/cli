@@ -1,0 +1,15 @@
+import React from 'react';
+import './index.scss';
+
+export interface <%= componentName %>Props {
+  /**
+   * children
+   */
+  children?: React.ReactNode
+}
+
+export default ({ children }: <%= componentName %>Props): React.FC<<%= componentName %>Props> => {
+  return (
+    <div data-cid="<%= componentName %>" className="<%= componentName %>">{children}</div>
+  );
+}

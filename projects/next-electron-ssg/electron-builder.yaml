@@ -1,0 +1,16 @@
+directories:
+  output: dist
+  buildResources: public
+appId: com.next-electron.app
+productName: Next Electron
+files:
+  - out/**/*
+  - package.json
+  - electron/**/*
+mac:
+  target: dmg
+win:
+  target: nsis
+linux:
+  target: AppImage
+electronVersion: 35.0.2

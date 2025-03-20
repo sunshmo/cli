@@ -1,0 +1,53 @@
+{
+  "name": "@sunshmo/cli",
+  "version": "1.0.0",
+  "description": "Front-end project or component cli.",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "ssm": "./index.js"
+  },
+  "scripts": {
+    "format": "prettier --write .",
+    "lint": "eslint ."
+  },
+  "keywords": [
+    "cross-platform",
+    "next",
+    "react",
+    "tauri",
+    "electron",
+    "component",
+    "ssr",
+    "ssg",
+    "vue",
+    "micro front end",
+    "lowcode",
+    "storybook",
+    "front-end",
+    "template"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sunshmo/cli.git"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "chalk": "^5.4.1",
+    "commander": "^13.1.0",
+    "ejs": "^3.1.10",
+    "fs-extra": "^11.3.0",
+    "inquirer": "^12.5.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.22.0",
+    "@types/node": "^22.13.10",
+    "eslint": "^9.22.0",
+    "prettier": "^3.5.3"
+  }
+}
