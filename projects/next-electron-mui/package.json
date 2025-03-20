@@ -1,0 +1,44 @@
+{
+  "name": "next-electron-mui",
+  "version": "0.1.0",
+  "private": true,
+  "main": "electron/main.js",
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "electron": "electron .",
+    "electron-dev": "concurrently \"npm run dev\" \"wait-on http://localhost:3000 && electron .\"",
+    "electron-build": "next build && electron-builder"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/icons-material": "^6.4.8",
+    "@mui/material": "^6.4.8",
+    "@mui/material-nextjs": "^6.4.3",
+    "@toolpad/core": "^0.13.0",
+    "next": "^15.2.2",
+    "next-themes": "^0.4.6",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "concurrently": "^9.1.2",
+    "electron": "^35.0.2",
+    "electron-builder": "^26.0.11",
+    "electron-builder-squirrel-windows": "^26.0.11",
+    "eslint": "^9",
+    "eslint-config-next": "15.1.6",
+    "postcss": "^8",
+    "sass": "^1.86.0",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5",
+    "wait-on": "^8.0.3"
+  }
+}
