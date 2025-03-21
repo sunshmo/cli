@@ -7,9 +7,10 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "tauri": "tauri",
-    "app-dev": "tauri dev",
-    "app-build": "tauri build"
+    "format": "prettier --write .",
+    "electron": "electron .",
+    "electron-dev": "concurrently \"npm run dev\" \"wait-on http://localhost:3000 && electron .\"",
+    "electron-build": "next build && electron-builder"
   }
 }
 ```
