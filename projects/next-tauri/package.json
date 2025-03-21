@@ -8,9 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "format": "prettier --write .",
-    "tauri": "tauri",
-    "app-dev": "tauri dev",
-    "app-build": "tauri build"
+    "tauri": "tauri"
   },
   "dependencies": {
     "next": "^15.2.2",
