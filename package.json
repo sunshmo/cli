@@ -45,6 +45,7 @@
     "inquirer": "^12.5.0"
   },
   "devDependencies": {
+    "@eslint/eslintrc": "^3.3.1",
     "@eslint/js": "^9.22.0",
     "@types/node": "^22.13.10",
     "eslint": "^9.22.0",
